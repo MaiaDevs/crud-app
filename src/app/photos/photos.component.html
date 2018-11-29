@@ -1,0 +1,19 @@
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+<div class="container">
+
+  <button class="btn btn-dark mb-3" (click)="active='First'">IA</button>
+  <button class="btn btn-danger mb-3" (click)="active='Second'">PS</button>
+   
+  
+  <div class="text-info d-none text-center" [ngClass]="{'d-block':active=='First'}" ><img src="assets/img/jo.jpg">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+  printer took a galley of type and scrambled it to make a type specimen book</p>
+  </div>
+  
+  <div class="text-danger d-none" [ngClass]="{'d-block':active=='Second'}"><img src="assets/img/chucky.jpg">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+  printer took a galley of type and scrambled it to make a type specimen book</p>
+  </div>
+  
